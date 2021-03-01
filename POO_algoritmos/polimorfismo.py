@@ -51,3 +51,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# polimofirmos para realizar cualquier cambio de comportamiento,y al mismo tiempo poder compartir
+#  toda la jerarquia de clases que fuimos construyendo el comportamineto deseado y asi poder 
+# especializar cada vez las clases y asi resolver el problema en mano
