@@ -94,5 +94,40 @@ elif a == b or b == c or a == c:
 else:
     print(0)
 
+""" Leap year:
+Given the year number. You need to check if this year is a leap year. If it is, print LEAP, otherwise print COMMON.
+The rules in Gregorian calendar are as follows:
+
+a year is a leap year if its number is exactly divisible by 4 and is not exactly divisible by 100
+a year is always a leap year if its number is exactly divisible by 400
+Warning. The words LEAP and COMMON should be printed all caps.
+"""
+year = int(input())
+if ( year % 400 == 0) or ( year % 4 == 0 ) and ( year % 100 != 0):
+    print(" LEAP ")
+else:
+    print(" COMMON")
+
+"""Chocolate bar:
+Chocolate bar has the form of a rectangle divided into n×m portions. Chocolate bar can be split into two rectangular parts by breaking it along a selected straight line on its pattern. Determine whether it is possible to split it so that one of the parts will have exactly k squares.
+The program reads three integers: n, m, and k. It should print YES or NO.
+"""
+n = int(input())
+m = int(input())
+k = int(input())
+
+if (k % n == 0 and k / n < m) or (k % m == 0 and k / m < n):
+    print('YES')
+else:
+    print('NO')
+
+"""or"""
+n = int(input())
+m = int(input())
+k = int(input())
+if k < n * m and ((k % n == 0) or (k % m == 0)):
+    print('YES')
+else:
+    print('NO')
 """
 """
